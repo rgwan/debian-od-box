@@ -113,9 +113,9 @@
 	\setlength{\abstractwidth}{2\linewidth}
 	\addtolength{\abstractwidth}{\columnsep}
 	\savebox{\twocolinsert}{\begin{minipage}{\abstractwidth}
-		\noindent 核准日期：2023年06月10日
+		\noindent 核准日期：2025年05月10日
 		\newline 修改日期：2019年07月06日，2020年10月31日，2021年07月04日，
-		\newline 2021年08月14日，2023年06月10日
+		\newline 2021年08月14日，2023年06月10日，2025年05月10日
 		\newline
 
 		% \begin{mdframed}[leftline=false, rightline=false, innertopmargin=0pt, innerbottommargin=0pt, innerrightmargin=0pt, innerleftmargin=2em]
@@ -177,7 +177,7 @@
 	\section*{性质}
 	\end{tcolorbox}
 
-	本系统为采用 GNU/Linux 内核的操作系统，安装后可由 UEFI 或 Legacy 引导方式启动。
+	本系统为采用 GNU/Linux 内核的操作系统，安装后可由 UEFI 或 Legacy 引导方式启动，亦可使用嵌入式引导方式（如 U-Boot）启动。
 
 	\medskip
 
@@ -187,7 +187,7 @@
 	\end{tcolorbox}
 
 	\begin{itemize}
-		\item 支持使用 arm64、amd64、i686、ppc64el、mipsel、s390x 等架构的计算机、服务器和嵌入式设备。
+		\item 支持使用 arm64、amd64、i686、ppc64el、mipsel、s390x、riscv64 等架构的计算机、服务器和嵌入式设备。
 		\item 本包装盒中的安装媒介适用于何平台以实际为准。
 	\end{itemize}
 
@@ -206,7 +206,7 @@
 
 	使用 USB 设备引导。
 
-	启动方式根据硬件调整，一般使用 UEFI。
+	启动方式根据硬件调整，一般使用 UEFI。启动方式以实际硬件支持为准。
 
 	根据硬件性能和个人需要，调整安装方式：一般而言，使用图形化界面进行安装；否则选择基于 ncurses 命令行下的安装。
 
@@ -270,6 +270,7 @@
 		\item 未确认操作即使用命令重定向
 		\item 未经确认即执行来自网络的脚本
 		\item 长期在散热不良的设备上高负载使用
+		\item 设备为生命支持系统的一部分
 	\end{itemize}
 
 
@@ -330,8 +331,9 @@
 	\end{tcolorbox}
 
 	装有 Debian GNU/Linux 安装镜像的、兼容 USB 3.0/2.0 协议的大容量存储设备。
+	刻录 Debian GNU/Linux 安装或软件库镜像的 DVD-R 或 BD-R 光盘。
 
-	1 枚/盒
+	1 枚/盒 或 1-4 片/盒。
 
 	\medskip
 
@@ -384,8 +386,10 @@
 	\begin{tabularx}{\linewidth}{@{}ll@{}}
 		\multirow{2}{*}{}{编审：} & @YukariChiba\\
 		~ & @moesoha \\
+		~ & @diodep \\
 		图形: & @YJBeetle\\
-		GitHub: & moesoha/debian-media-box\\
+		~ & @diodep \\
+		GitHub: & rgwan/debian-media-box\\
 	\end{tabularx}
 
 	\medskip
@@ -393,7 +397,7 @@
 
 	\vfill
 	\begin{flushright}
-		Debian GNU/Linux - 12.0\linebreak 20230610
+		Debian GNU/Linux - 13.0\linebreak 20250510
 		\linebreak
 		\newline
 		\begin{minipage}{0,5\textwidth}
