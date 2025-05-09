@@ -124,7 +124,7 @@
 		% 	\begin{imgminipage}{assets/header-background.eps}[t]{0.7\abstractwidth}
 		% 		\Large \textbf{盒装安装媒介说明书}
 
-		% 		\normalsize 请仔细阅读说明书并在管理员指导下使用
+		% 		\normalsize 请仔细阅读说明书并在（域/系统）管理员指导下使用
 		% 	\end{imgminipage}
 		% \end{mdframed}
 
@@ -196,7 +196,7 @@
 	\section*{规格}
 	\end{tcolorbox}
 
-	1 枚 安装媒介
+	1 套 安装媒介
 
 	\medskip
 
@@ -208,7 +208,7 @@
 
 	启动方式根据硬件调整，一般使用 UEFI。启动方式以实际硬件支持为准。
 
-	根据硬件性能和个人需要，调整安装方式：一般而言，使用图形化界面进行安装；否则选择基于 ncurses 命令行下的安装。
+	根据硬件性能和个人需要，调整安装方式：一般而言，使用图形化界面进行安装；亦可选择基于 ncurses 文字界面下的安装。
 
 	安装好基本系统并设置完成软件包后，即可酌情选择桌面环境和桌面管理器。
 
@@ -220,7 +220,7 @@
 
 	Debian 有一个对用户和开发者所提交的软件缺陷报告进行归档管理的缺陷跟踪系统，英文缩写为 BTS。每个软件缺陷报告都被授予一个编号并且被长期跟踪，直到它被标记为已修复。
 
-	可以在 https://www.debian.org/Bugs/ 处获得这个文件的拷贝。
+	可以在 https://www.debian.org/Bugs/ 处获得这个文件的副本。
 
 	\medskip
 
@@ -269,24 +269,25 @@
 		\item 未确认设备名即执行格式化
 		\item 未确认操作即使用命令重定向
 		\item 未经确认即执行来自网络的脚本
+		\item 存储设备发出异响或冒出魔法烟雾
 		\item 长期在散热不良的设备上高负载使用
 		\item 设备为生命支持系统的一部分
 	\end{itemize}
 
 
-	% \begin{tcolorbox}
-	% \section*{无障碍安装}
-	% \end{tcolorbox}
+	\begin{tcolorbox}
+	\section*{无障碍安装}
+	\end{tcolorbox}
 
-	% Debian GNU/Linux 安装介质不用于视力或运动障碍人士。
+	Debian GNU/Linux 安装介质不用于视力或运动障碍人士。
 
-	% \medskip
+	\medskip
 
 	% \begin{tcolorbox}
 	% \section*{新手安装}
 	% \end{tcolorbox}
 
-	% Debian GNU/Linux 应谨慎用于新手安装，需要在管理员指导下进行安装，并且需要进行密切的系统监测，一旦出现系统完整度的恶化，应考虑停止使用 Debian GNU/Linux。
+	% Debian GNU/Linux 应谨慎用于新手安装，需要在（域/系统）管理员指导下进行安装，并且需要进行密切的系统监测，一旦出现系统完整度的恶化，应考虑停止使用 Debian GNU/Linux。
 
 	% \medskip
 
@@ -323,6 +324,8 @@
 
 	妥善贮藏所有安装媒介，勿使不会安装的人员触及。
 
+	使用光盘媒介时请勿碰触光盘数据面或划伤光盘任意一面，否则可能导致安装程序完整性校验失败，甚至因为动平衡破坏引发光驱超速（OD）导致光驱损坏或人身危险。
+
 	\medskip
 
 
@@ -330,8 +333,14 @@
 	\section*{包装}
 	\end{tcolorbox}
 
-	装有 Debian GNU/Linux 安装镜像的、兼容 USB 3.0/2.0 协议的大容量存储设备。
-	刻录 Debian GNU/Linux 安装或软件库镜像的 DVD-R 或 BD-R 光盘。
+	该盒装安装程序至少包含以下两种媒介中的一种：
+	\begin{itemize}[leftmargin=*]
+		\setlength{\itemsep}{0pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+		\item 装有 Debian GNU/Linux 安装镜像的、兼容 USB 3.0/2.0 协议的大容量存储设备。
+		\item 记录 Debian GNU/Linux 安装程序、或软件库镜像的 DVD 或 BD 光盘。
+	\end{itemize}
 
 	1 枚/盒 或 1-4 片/盒。
 
@@ -371,13 +380,13 @@
 	\medskip
 
 
-% 	\begin{tcolorbox}
-% 	\section*{生产单位}
-% 	\end{tcolorbox}
-%
-% 	Debian 计划
-%
-% 	\medskip
+	\begin{tcolorbox}
+	\section*{生产单位}
+	\end{tcolorbox}
+
+	Debian 计划
+
+	\medskip
 
 
 	\begin{tcolorbox}
@@ -389,7 +398,7 @@
 		~ & @diodep \\
 		图形: & @YJBeetle\\
 		~ & @diodep \\
-		GitHub: & rgwan/debian-media-box\\
+		GitHub: & rgwan/debian-od-box\\
 	\end{tabularx}
 
 	\medskip
