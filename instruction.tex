@@ -5,14 +5,15 @@
 \pagenumbering{gobble}
 
 \usepackage{geometry}
-\geometry{papersize={210mm,297mm}}
+\geometry{papersize={130mm,185mm}}
 \geometry{left=9mm,right=9mm,top=9mm,bottom=9mm}
 
 \usepackage{fontspec}
-\setmainfont{DejaVu Sans}[Scale=0.9]
+\setmainfont{DejaVu Sans}[Scale=0.8]
 
 \usepackage{xeCJK}
 \CJKfamily{zhsong}
+\defaultCJKfontfeatures{Scale=0.9}
 
 \usepackage[svgcolors]{xcolor}
 \usepackage{longfbox}
@@ -108,7 +109,7 @@
 }
 
 \begin{document}
-\begin{multicols*}{3}
+\begin{multicols*}{2}
 
 	\setlength{\abstractwidth}{2\linewidth}
 	\addtolength{\abstractwidth}{\columnsep}
@@ -238,9 +239,9 @@
 			\hline
 			类别 & RAM\newline (最低) & RAM\newline (推荐) & 硬盘 \\
 			\hline
-			无桌面 & 128MB & 512MB & 2GB \\
+			无桌面 & 256MB & 1GB & 2GB \\
 			\hline
-			有桌面 & 256MB & 1GB & 10GB \\
+			有桌面 & 512MB & 1GB & 10GB \\
 			\hline
 		\end{tabularx}}
 
