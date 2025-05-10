@@ -9,13 +9,13 @@
 \geometry{left=9mm,right=9mm,top=9mm,bottom=9mm}
 
 \usepackage{fontspec}
-\setmainfont{DejaVu Sans}[Scale=0.8]
+\setmainfont{DejaVu Sans}[Scale=0.7]
 
 \usepackage{xeCJK}
 \CJKfamily{zhsong}
-\defaultCJKfontfeatures{Scale=0.9}
+\defaultCJKfontfeatures{Scale=0.85}
 
-\usepackage[svgcolors]{xcolor}
+\usepackage{xcolor}
 \usepackage{longfbox}
 \usepackage{epstopdf}
 \usepackage{float}
@@ -160,7 +160,6 @@
 
 	\medskip
 
-
 	\begin{tcolorbox}
 	\section*{内容}
 	\end{tcolorbox}
@@ -168,11 +167,12 @@
 	完全由自由软件组成的类 UNIX 操作系统，其包含的多数软件使用 GNU 通用公共许可协议授权，并由 Debian 计划的参与者组成团队对其进行打包、开发与维护。
 
 	% 内核版本：4.19.0
-
 	% 版本号：“buster”
-
 	\medskip
 
+	\columnbreak
+    \begin{minipage}[t]{\linewidth}
+    \vspace{8.9cm}
 
 	\begin{tcolorbox}
 	\section*{性质}
@@ -182,16 +182,16 @@
 
 	\medskip
 
-
 	\begin{tcolorbox}
 	\section*{适应平台}
 	\end{tcolorbox}
 
 	\begin{itemize}
 		\item 支持使用 arm64、amd64、i686、ppc64el、mipsel、s390x、riscv64 等架构的计算机、服务器和嵌入式设备。
-		\item 本包装盒中的安装媒介适用于何平台以实际为准。
+		\item 本包装盒中的安装媒介适用于何种平台以实际为准。
 	\end{itemize}
 
+	\end{minipage}
 
 	\begin{tcolorbox}
 	\section*{规格}
@@ -200,6 +200,7 @@
 	1 套 安装媒介
 
 	\medskip
+
 
 	\begin{tcolorbox}
 	\section*{用法}
@@ -241,11 +242,11 @@
 			\hline
 			无桌面 & 256MB & 1GB & 2GB \\
 			\hline
-			有桌面 & 512MB & 1GB & 10GB \\
+			有桌面 & 512MB & 2GB & 10GB \\
 			\hline
 		\end{tabularx}}
 
-		基于您的需求，也许可以使用低于上表所列的配置完成系统安装。但是多数用户在无视这些建议的情况下会安装失败。
+		基于您的需求，也许可以使用低于上表所列的配置完成系统安装。但是多数用户在忽略这些建议的情况下会安装失败。
 
 		\item 需要固件的设备
 
@@ -270,27 +271,10 @@
 		\item 未确认设备名即执行格式化
 		\item 未确认操作即使用命令重定向
 		\item 未经确认即执行来自网络的脚本
-		\item 系统发出异响或冒出魔法烟雾
+		\item 设备发出异响或冒出魔法烟雾
 		\item 长期在散热不良的设备上高负载使用
 		\item 设备为生命支持系统的一部分
 	\end{itemize}
-
-
-	% \begin{tcolorbox}
-	% \section*{无障碍安装}
-	% \end{tcolorbox}
-
-	% Debian GNU/Linux 安装介质不用于视力或运动障碍人士。
-
-	% \medskip
-
-	% \begin{tcolorbox}
-	% \section*{新手安装}
-	% \end{tcolorbox}
-
-	% Debian GNU/Linux 应谨慎用于新手安装，需要在（域/系统）管理员指导下进行安装，并且需要进行密切的系统监测，一旦出现系统完整度的恶化，应考虑停止使用 Debian GNU/Linux。
-
-	% \medskip
 
 
 	% \begin{tcolorbox}
@@ -372,9 +356,27 @@
 		~ & BSD \\
 		~ & 以及其他授权条款 \\
 	\end{tabularx}
+		其余专有软件授权请参阅对应使用许可。
+		
+	\medskip
+
+	\begin{tcolorbox}
+	\section*{无障碍安装}
+	\end{tcolorbox}
+
+	Debian GNU/Linux 安装介质不适用于视力或运动障碍人士。
 
 	\medskip
 
+	\begin{tcolorbox}
+	\section*{新手安装}
+	\end{tcolorbox}
+
+	Debian GNU/Linux 应谨慎用于新手安装，需要在（域/系统）管理员指导下进行安装，并且需要进行密切的系统监测。
+	
+	一旦出现系统完整度的恶化，应考虑停止使用 Debian GNU/Linux。
+
+	\medskip
 
 	\begin{tcolorbox}
 	\section*{批准文号}
@@ -403,7 +405,7 @@
 		~ & @diodep \\
 		图形: & @YJBeetle\\
 		~ & @diodep \\
-		GitHub: & rgwan/debian-od-box\\
+		GitHub: & diodep/debian-od-box\\
 	\end{tabularx}
 
 	\medskip
